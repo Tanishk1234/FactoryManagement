@@ -1,0 +1,168 @@
+/* === GLOBAL === */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f8f9fa;
+    color: #212529;
+    line-height: 1.6;
+    padding: 40px;
+  }
+  
+  h1, h2, h3 {
+    margin-bottom: 20px;
+    color: #343a40;
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+  
+  /* === CONTAINER === */
+  #mainContainer {
+    max-width: 1200px;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 30px 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* === BUTTONS === */
+  button {
+    background-color: #0069d9;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 5px 20px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* === FORM SECTIONS === */
+  form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  select {
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    background: #f1f3f5;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  input:focus,
+  select:focus {
+    outline: none;
+    border-color: #80bdff;
+    background: #fff;
+  }
+  
+  /* === TABLE === */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+  
+  thead {
+    background: #dee2e6;
+    color: #495057;
+  }
+  
+  thead tr {
+    border-bottom: 2px solid #adb5bd;
+  }
+  
+  th, td {
+    padding: 10px 12px;
+    text-align: center;
+    border-bottom: 1px solid #e9ecef;
+  }
+  
+  tbody tr:nth-child(even) {
+    background: #f8f9fa;
+  }
+  
+  tbody tr:hover {
+    background: #e2f0ff;
+    transition: background 0.2s ease-in-out;
+  }
+  
+  /* === SECTION STYLING === */
+  #karigarEntrySection {
+    margin-top: 40px;
+  }
+  
+  #karigarButtons {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  /* === ENTRY FORM === */
+  #entryFormSection {
+    background: #f1f3f5;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.08);
+  }
+  
+  #entryFormSection h3 {
+    margin-bottom: 20px;
+  }
+  
+  #entryFormSection label {
+    font-weight: 600;
+    margin-top: 10px;
+    display: block;
+  }
+  
+  #entryFormSection input,
+  #entryFormSection select {
+    margin-bottom: 15px;
+  }
+  
+  /* === MEDIA QUERIES === */
+  @media (max-width: 768px) {
+    body {
+      padding: 20px;
+    }
+  
+    #mainContainer {
+      padding: 20px;
+    }
+  
+    form {
+      grid-template-columns: 1fr;
+    }
+  
+    button {
+      width: 100%;
+    }
+  
+    table {
+      font-size: 14px;
+    }
+  }
+  

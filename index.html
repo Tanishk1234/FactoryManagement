@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Factory Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="mainContainer">
+    <h1>Factory Manager</h1>
+
+    <button id="addKarigarBtn">Add Karigar</button>
+    <div id="karigarFormSection" class="hidden">
+      <form id="karigarForm">
+        <input type="text" id="karigarName" placeholder="Name" required />
+        <select id="karigarType">
+          <option value="HandMade">Hand Made</option>
+          <option value="Chillay">Chillay</option>
+          <option value="Polish">Polish</option>
+        </select>
+        <button type="submit">Create</button>
+      </form>
+    </div>
+
+    <div id="karigarButtons"></div>
+
+    <div id="karigarEntrySection" class="hidden">
+      <h2 id="karigarTitle"></h2>
+      <p id="karigarDateTime"></p>
+      <table id="entryTable">
+        <thead>
+          <tr id="tableHeaderRow">
+            <!-- Header will be generated dynamically -->
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <button id="createEntryBtn">Create Entry</button>
+    </div>
+
+    <div id="entryFormSection" class="hidden">
+      <h3>New Entry</h3>
+      <select id="entryType">
+        <option value="given">Weight Given</option>
+        <option value="taken">Weight Taken</option>
+      </select>
+
+      <div id="entryMatchingDropdown" class="hidden">
+        <label for="matchingEntries">Select Entry:</label>
+        <select id="matchingEntries"></select>
+      </div>
+
+      <div id="entryNameSection" class="hidden">
+        <label for="entryPerson">Name:</label>
+        <select id="entryPerson">
+          <option value="Prem">Prem</option>
+          <option value="Sandeep">Sandeep</option>
+        </select>
+      </div>
+
+      <div id="entryPcsSection" class="hidden">
+        <label for="entryPcs">Pcs:</label>
+        <input type="number" id="entryPcs" placeholder="Enter Pcs" />
+      </div>
+
+      <label for="entryDateTime">Date & Time:</label>
+      <input type="text" id="entryDateTime" readonly />
+
+      <label for="entryWeight">Weight (gm):</label>
+      <input type="number" id="entryWeight" placeholder="Enter Weight" />
+
+      <button id="saveEntryBtn">Save Entry</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
