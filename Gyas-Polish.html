@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sandeep - Handmade</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="mainContainer">
+    <h1>Factory Manager</h1>
+    <!-- Entry, Form and Script same as Prem-Handmade -->
+    <div id="karigarEntrySection">
+      <h2 id="karigarTitle">Loading...</h2>
+      <p id="karigarDateTime"></p>
+
+      <table id="entryTable">
+        <thead>
+          <tr id="tableHeaderRow"></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <button id="createEntryBtn">Create Entry</button>
+    </div>
+
+    <div id="entryFormSection" class="hidden">
+      <h3>New Entry</h3>
+
+      <label for="entryType">Entry Type:</label>
+      <select id="entryType">
+        <option value="given">Weight Given</option>
+        <option value="taken">Weight Taken</option>
+      </select>
+
+      <div id="entryMatchingDropdown" class="hidden">
+        <label for="matchingEntries">Select Entry:</label>
+        <select id="matchingEntries"></select>
+      </div>
+
+      <div id="entryNameSection">
+        <label for="entryPerson">Name:</label>
+        <select id="entryPerson">
+          <option value="Prem">Prem</option>
+          <option value="Sandeep">Sandeep</option>
+        </select>
+      </div>
+
+      <div id="tunchSection" class="hidden">
+        <label for="entryTunch">Tunch:</label>
+        <select id="entryTunch">
+          <option value="83.30">83.30</option>
+          <option value="75.05">75.05</option>
+        </select>
+      </div>
+
+      <div id="entryPcsSection">
+        <label for="entryPcs">Pcs:</label>
+        <input type="number" id="entryPcs" placeholder="Enter Pcs" />
+      </div>
+
+      <label for="entryDateTime">Date & Time:</label>
+      <input type="text" id="entryDateTime" readonly />
+
+      <label for="entryWeight">Weight (gm):</label>
+      <input type="number" id="entryWeight" placeholder="Enter Weight" />
+
+      <div class="form-buttons">
+        <button id="saveEntryBtn">Save Entry</button>
+        <button id="modifyEntryBtn" class="hidden">Update Entry</button>
+        <button id="deleteEntryBtn" class="hidden">Delete Entry</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
